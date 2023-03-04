@@ -7,6 +7,11 @@ import vue from "@astrojs/vue";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import cloudflare from "@astrojs/cloudflare";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [vue(), sitemap()]
+  integrations: [vue(), sitemap()],
+  output: "server",
+  adapter: cloudflare()
 });
