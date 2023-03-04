@@ -1,5 +1,5 @@
 <template>
-  <div class="box"></div>
+  <div class="box w-24 h-24 bg-red-500"></div>
 </template>
 
   <script setup lang="ts">
@@ -15,11 +15,3 @@ onMounted(() => {
       });
 })
 </script>
-
-<style>
-  .box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-  }
-</style>
