@@ -10,8 +10,11 @@ import sitemap from "@astrojs/sitemap";
 import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
+import prefetch from "@astrojs/prefetch";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [vue(), sitemap()],
+  integrations: [vue(), sitemap(), prefetch()],
   output: "server",
   adapter: cloudflare()
 });
