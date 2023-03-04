@@ -13,8 +13,11 @@ import cloudflare from "@astrojs/cloudflare";
 import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
+import tailwind from "@astrojs/tailwind";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [vue(), sitemap(), prefetch()],
+  integrations: [vue(), sitemap(), prefetch(), tailwind()],
   output: "server",
   adapter: cloudflare()
 });
